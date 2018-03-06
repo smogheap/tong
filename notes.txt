@@ -1,0 +1,46 @@
+(notes to myself during development)
+
+
+briefest possible text blurbs for new rules:
+(and, conveniently, every rule I plan to implement)
+
+rule change every 30 seconds
+rule change every 10 lines
+rule change every 10 paddles
+ball destroys tetrad
+tetrad destroys ball
+tetrad splits ball
+tetrad bounces ball
+ball sticks to tetrad
+ball sticks to stack
+ball breaks tetrad
+ball breaks stack
+ball melts tetrad
+ball melts stack
+stack bounces ball
+stack splits ball
+tetrad ignores ball
+tetrad ignores stack
+
+
+multiplayer-only rules:
+
+everybody move
+boundaries {off,on}
+
+
+
+scoring:
+
+scheme 1 (timed game)
+stack to ceiling nth time: -(n*10000-1) points
+miss nth ball: -(n*100-1) points
+n-line clear: 500*2^n points
+paddle: 100 points
+
+scheme 2 (marathon)
+credit 1 ball every 20 lines (w/o ceiling)
+credit 1 ceiling every 50 paddles (w/o miss)
+n-line clear: 100*2^n points
+paddle: 100 points
+paddle edge: 300 points

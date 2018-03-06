@@ -1,0 +1,22 @@
+Building anything on win32 that uses SDL is tricker than it ought to be.
+Cygwin ( http://pgdc.purdue.org/sdltutorial/sdl_setup.html ) and Visual
+Studio both should be able to build TONG; possibly some fudging around
+will be necessary to help them find the SDL libraries.
+
+TONG requires SDL, SDL_image and SDL_mixer.  Grab 'em from
+http://www.libsdl.org
+http://www.libsdl.org/projects/SDL_image
+http://www.libsdl.org/projects/SDL_mixer
+
+Opening the tong.dsw file should open up TONG in Visual Studio; under
+Cygwin you'll be using the good ol' 'make' command.  You shouldn't need
+to edit Makefile unless sdl-config isn't in your path, in which case I'd
+recommend remedying that rather than editing the Makefile, but whatever
+works for you.  :^)
+
+Setting up SDL paths etc for Visual Studio (.NET, but applies to older
+versions too if you can hunt around in option screens a bit) is detailed
+quite well here:
+http://pgdc.purdue.org/sdltutorial/sdl_setup.html
+The steps it shows for SDL libs and includes, you should repeat for
+SDL_image and SDL_mixer.

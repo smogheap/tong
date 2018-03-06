@@ -1,0 +1,146 @@
+INTRODUCTION
+------------
+TONG has been a long time coming.  For anybody interested in its
+origins and development, or just making a psychological case study of
+the head of a guy who would not only think this mess was a good idea
+but to go through with it, I hope you find this interesting.  And if
+not, well, my apologies.  No refunds on your time wasted, sorry.  :^)
+
+
+IT BEGINS
+---------
+I was in high school when TONG first surfaced as an idea.  My friends
+Ian and Kris and I were talking nonsense, as we nearly always did, and
+somehow the idea of mixing Tetris and Pong emerged.  I wish I could
+credit one of us for the idea, but I honestly can't remember if the
+light came on for just one of us first.  It may have actually taken
+all three of us to come up with it.  That says a lot about how
+effective so many years of school had been on the three of us.  :^)
+But once the basic idea had materialized, all sorts of bizarre rules
+and customizations immediately started springing to life around it.
+We had the plan.  We imagined one day playing it on Nintendo64.  (For
+TONG, we thought, would make the ultimate pick-up-and-play 4-way party
+game.  This part of the idea has yet to take any form whatsoever.)  We
+imagined rules changing on the fly, effects like busting up the tetrad
+or evaporating the ball when collisions inevitably happened.  We
+imagined a devilishly hard and unfair game that you could set to easy,
+but it never quite would be.  We imagined it would be a lot of fun.
+
+
+TAKE 1: DOS/Borland
+-------------------
+It turns out it would also be a lot of work, as I came to know when I
+began the game's first draft, a DOS program built in very amateur C++
+using a goofy Borland graphics library.  In my first programming
+course at college, every day when we learned something new, or even on
+days the rest of the class was reviewing, I'd be reading just a bit
+ahead and thinking "I could use this to do such-and-such in Tong!"  I
+got that rusty, sloppy DOS app to handle keyboard input, though not
+very well, and to draw in pathetic outlines boxes, circles, and big
+fat Atari-looking block letters, usually failing to refresh everything
+exactly right and leaving holes in the paddles until they moved,
+ball-shaped graphical leftovers strewn about, and the odd mystery
+pixel, changing to some seemingly random color for seemingly no
+reason.  TONG was on its way, in all its quirky glory!  ... or not.
+
+
+TAKE 2: Windows/MFC
+-------------------
+As with any pet project of mine, long lapses of time went by without
+anything happening to TONG.  Bit-rot set in, and it looked pretty
+embarassing next to the video and animation projects I'd since done.
+And nobody ran DOS anymore.  It was time for something new.
+
+So, I took one look at the old code and knew it was hopeless.  I'd
+learned so much about object-oriented programming since the original
+spaghetti code took shape that I would have been embarassed to use any
+of the old stuff.  I began anew, knowing just enough about graphical
+programming in Windows via the MFC to be dangerous.  A new TONG then
+started to take shape, one with improved input handling and a drawing
+system that I'm sure would make me cry now.  I drew up halfway-
+respectable graphics for it.  I got it to play music off CDs while it
+ran.  I wasn't at all happy with its framework, but I didn't know how
+else to do graphics on a modern system.
+
+Once more, other projects got more attention, and the code fell into a
+state of who-gives-a-rat's-arse.  Closer, but still no cigar.
+
+
+TAKE 3: GNU/Linux/SDL
+---------------------
+By the time I graduated college, I had become a huge GNU/Linux
+enthusiast.  I hadn't run any version of Windows on my own hardware
+for years.  I had even dabbled in graphics programming with the
+portable SDL libraries while working on Bontz, my other, much more
+ambitious pet project.  I thought another ressurection of TONG could
+teach me enough about SDL that I could storm ahead with Bontz, which
+may yet come to be true.  Unaware of where the old codebases were, and
+not caring one whit, I once more rewrote TONG from scratch.  This
+time, I took care to draw some nice anti-aliased graphics.  This time,
+I used a cross-platform library.  This time, I found musicians willing
+to donate music.  This time, I was going to finish.
+
+Things went along well until the game was about half done, and it
+stayed in its 0.6 state for a long time.  Then, two things happened.
+Novell started considering me for a programming position. A buddy of
+mine employed there started showing around TONG as an example of my
+cross-platform programming abilities.  I got a kick out of the idea
+that people at one of my favorite companies in the world were playing
+TONG, but I was slightly embarassed that they were playing such an
+old, buggy version.  Not that any newer, more polished one existed.
+Then, out of nowhere, PC World Brazil magazine asked if they could
+include TONG on a CD to be packed-in with a published issue.
+Naturally I was thrilled and agreed, but hoped to get some
+improvements in before publication.  So began another spurt of work
+and improvements, and TONG was closer than ever to a full game.
+
+Novell hired me, I moved to Utah with my wonderful fiancee, and once
+we were more or less settled in I started getting serious about TONG
+once more.  I never heard back from PC World Brazil.  After releasing
+0.8 and spamming a bunch of friends asking them to try it out and give
+me feedback, the last piece of the puzzle came in.  All this time,
+TONG had only a time-attack mode, no marathon, play-till-you-die mode.
+I refused to make a marathon game that ran until the tetris stack
+overflowed, because that excluded the Pong element.  But Andy gave me
+some feedback that included how much he disliked the negative scoring.
+Instead of deducting points for a missed ball, he said, why not add
+junk to the stack?  The point-based time attack remains, but the main
+mode of the game was now the new marathon mode, where Pong and Tetris
+elements would work in tandem for the endgame.
+
+Marathon mode, configurable keys, high scores, persistant settings,
+and the usual sorts of mechanical tweaks were all frantically added to
+TONG 0.9 at the end of December 2004, just barely in time to scramble
+together a clean, releasable 1.0 version for Christmas.
+
+
+THE LAST PAGES ARE FOR YOU
+--------------------------
+I'll probably keep tinkering with TONG, get it running nicely on the
+Sega Dreamcast, give it proper joystick support, that sort of thing.
+Maybe someday I'll even get around to doing the 4-player party
+version.  Maybe Tong 2 will have gravity and elemental effects and all
+the other wicked ideas that didn't make it into this one.  But for
+now, my part in this game is over.  Not to sound too much like public
+television, (I don't want your money) but what happens next with TONG
+is up to you.  You, or your geeky friend, or your nephew who's
+starting to learn how to program.  You are free and encouraged to open
+up the source code and start hacking away.  Make it harder, make it
+easier, make it more fun.  Make it your own.  I poured a lazy year's
+worth of effort into TONG to make it what it is now, and because I so
+much appreciate other programmers who do this, I'm releasing all those
+ideas I had, all that work I did into the wild, so that anybody with
+the patience to wade through my code or the morsel of actual talent it
+would take to create better graphics may do so, and TONG will be all
+the better for it.
+
+
+SECRET
+------
+If you've read this far, I'll let you in on a little secret.  For a
+festive game, type "xmas" at the title screen.  The effect wears off
+when you exit TONG.  Have fun!
+
+
+owenswerk@gmail.com
+http://www.nongnu.org/tong

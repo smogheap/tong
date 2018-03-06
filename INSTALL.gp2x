@@ -1,0 +1,48 @@
+Building TONG for the GP2X/Wiz is pretty simple, as long as you have the
+GPH_SDK toolchain installed.
+GNU/Linux:
+  http://dl.openhandhelds.org/cgi-bin/wiz.cgi?0,0,0,0,14,384
+MS Windows:
+  http://dl.openhandhelds.org/cgi-bin/wiz.cgi?0,0,0,0,14,383
+Its guide talks about CodeBlocks and other such nonsense, but you don't
+need any of that, just the SDK is fine.  There are other GP2X/Wiz
+toolchains floating around too, I bet they'd work just as well with some
+path changes.  Contact me if you do this, I'd be happy to make it easier.
+
+
+BUILDING TONG
+-------------
+* Modify 'Makefile'.
+Around line 17 there's a section for GP2X.  Point it to where your
+GPH_SDK lives, and, if you're using another toolchain,  probably the
+paths that follow.
+* Do a 'make gp2x'.
+With any luck, tong.gpe will be generated, and you're almost home-free.
+* Copy stuff to the device's NAND or an SD card
+I suggest the following directory structure:
+/game/
+/game/tong.ini
+/game/tong/
+/game/tong/credits.txt  (copy from CREDITS file)
+/game/tong/tong.gpe
+/game/tong/media/       (copy from media/gp2x)
+If you set it up differently, either tweak tong.ini or just run TONG
+from the launcher instead of the main game/SD menu.
+
+
+ADDITIONAL NOTES
+----------------
+TONG runs best on a GP2X/Wiz with the help of an improved libSDL, as
+the original has some diagonal tearing problems and is generally not as
+optimized.  You can grab it from:
+  http://dl.openhandhelds.org/cgi-bin/wiz.cgi?0,0,0,0,23,271
+and copy it to:
+  /game/tong/libSDL-1.2.so.0
+
+The rule graphics don't get themed in the GP2X build, not because it
+takes any extra power (it certainly doesn't) but because I didn't
+shrink the rule text and it overlaps the pieces.  It would be easy
+enough to build the graphic out of themed blocks as usual and then apply
+just the rule text over it, but I'm lazy and have other games I'd rather
+spend time hacking on.  If you feel like fixing this or anything else,
+I'll be more than happy to take your patches and graphics.  :^)

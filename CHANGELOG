@@ -1,0 +1,120 @@
+future...
+- "diet" version with less music
+- dreamcast build
+- macOSX build
+- ps3 build
+- wii build
+- tutorial mode
+- cursor-style mouse menu navigation
+- controls overhaul for custom setup (any keyboard/mouse/joystick combo)
+- ps3 gamepad support
+- bugfixes
+  - ball ejection to avoid trapping
+  - ignore cases don't halt ball (?)
+
+v1.1
+soon!
++ awesome new theme music!
++ linux version: can install media in /usr/share or whatever
++ gp2x/wiz build
++ bugfixes
+  + tetrad speed reset between games
+  + fix "shoved" piece duping when moved during landing
++ theme picker and new themes
++ high scores enterable via arrow keys/joystick
+
+v1.0
+2004-12-23
+* bugfixes
+* xmas mode (easter egg)
+
+v0.9
+2004-12-21
+* settings/rules are saved
+* marathon mode
+* mouse menu navigation
+* input config
+* high scores
+* lots more music
+* new sound effects
+
+v0.8
+2004-11-27
+* rule-setting screen
+* options: paddle placement/size
+* options: speed-up over time
+* option: begin with random rules
+* option: time/balls/lines make rules change
+* options: allow/deny each ball+tetrad and ball+stack reaction
+* display next tetris piece
+* display active rules
+* changing to/from "join" rules works more betterer
+* small memory leak fix
+* begin code cleanup
+
+v0.7
+2004-09-08
+* timer and game-over!
+* custom game length
+* 3 music selections
+* score system vastly improved
+* completely redone (read: existing) menu system
+* abort game in-progress
+* change bit depth and audio specs on-the-fly
+* primitive joystick support
+* stability/speed improvements everywhere
+
+v0.6
+2004-02-29
+* lots more tetris+pong reactions!
+* rule change every 30 seconds!
+* score system (buggy)
+* tetrad rotation more forgiving (near edges etc)
+* trapped balls get re-initialized
+* tetrad rotation tweaked (some new rules made bugs visible)
+* text engine streamlined
+
+v0.5
+2004-02-22
+* pong+tetris interaction!  ball breaks stack, ball pushes tetrad
+* paddles can put "english" on pong ball
+* pong balls start out in a more civilized manner
+* mini title/menu/controls screen
+
+v0.4
+2004-02-21
+* pong engine fixed
+* sound effects added
+
+v0.3
+2004-02-13
+* music support
+* windowed option
+* pong engine mostly-operational
+* tetris engine bugfixes
+
+v0.1
+2004-01-12
+* SDL rendering, 640x480 fullscreen
+* tetris engine mostly-operational
+
+v0.0
+2002-08-21
+* Started TONG! codebase, establish Savannah CVS repository
+
+pre-history
+note: If for any reason somebody is interested in an ancient DOS or MFC
+versions of TONG!... first, don't be.  They were never finished and were
+rather buggy even in their incomplete states.  Second, if you are
+interested anyway, buy me a beer or something and I'll sniff through my
+old dusty backup CDs and disks and see if any trace of them even remains.
+update: They exist!  I'll upload copies somewhere.  Someday.
+2001-??-??
+* MFC version abandoned, had simultaneous tetris and pong
+1999-??-??
+* DOS version abandoned, had simultaneous tetris and pong, scoring
+* Win32/MFC verstion started
+1997-??-??
+* DOS/Borland C++ version started
+1997-??-??
+* Idea for TONG! originally conceived

@@ -1,0 +1,85 @@
+INTRODUCTION
+------------
+TONG! - Tetris meets Pong, with more twists than a contortionist club's
+        secret handshake
+
+TONG is free software, free as in speech and free as in beer.  Mmmm, beeer...
+See COPYING for license information.  (Spoiler: It's the GPL, version 2)
+
+For information on building TONG, see the INSTALL file.  For the impatient,
+simply running 'make' will work if you have SDL, SDL_Image, and SDL_Mixer.
+
+
+CONTROLS
+--------
+In-game keyboard controls can be customized in the "Controls.." menu.
+The default controls for TONG are:
+Menus:
+  (arrow keys, mouse)  = move cursor
+  (enter, click)       = make selection
+  (escape)             = back out
+In-game:
+  (space)    = tetrad rotate counterclockwise
+     [^]     = tetrad rotate clockwise
+  [<][v][>]  = tetrad movement keys
+  (mouse)    = move paddles
+
+
+STRATEGY
+--------
+Playing Tetris and Pong at the same time in the same space will hurt your
+brain at first.  After a few rounds, however, you'll find yourself getting
+better at it, and it won't take you long to figure out which rules help
+your style of play and which rules make things a nightmare.  To become a
+TONG master, however, you'll need to be able to cope with even the most
+evil interactions.
+
+Some players find themselves paying more attention to the Tetris pieces
+than the Pong bits.  That's OK, but your score will really suffer if you
+keep neglecting the ball!  To train yourself, set the rules to change on
+every new ball, or every three balls if you like.  Likewise, if you find
+yourself playing Pong well but making a mess of the Tetris playfield, set
+rules to change every linebreak, or every five.  Either of these settings
+could backfire when you get a rule that especially annoys or helps you, at
+which point you will be tempted to mess up on purpose just to change or
+keep it.
+
+Your score will not be affected by any of the settings you play with, so
+if you want to turn off rules you don't like, you may do so without
+penalty.  A truly good player, however, can set up the hardest game
+possible and wind up with a better score than a beginner who uses cushy
+settings.
+(Note:  That might be a wicked lie when it comes to "insane" mode.)
+
+
+SHAMELESS PROMOTION
+-------------------
+The following are reactions to pre-release version 0.8, taken off a message
+board at http://www.ahcsuspects.com/forums/index.php?showtopic=503
+
+"simply splended"
+-SimiaN
+
+"this is the gold rush for the nerds. we must all cherish this game
+ ....well, if its any good."
+-brutal
+
+"bad idea well implemented"
+-The Cheshire Cat
+
+
+COPYRIGHT
+---------
+Music by Jared Burke  http://www.anal0g.org/_aa_
+used with permission.  Jared is a great musician who I've never met in
+person, but is very open about the use of his material, hence its
+inclusion in a free software project like this.  :^)
+"Tong" Theme music by Marcus hirt.
+All music included in Tong is licensed as GPL.  (Yes, that's usuaual, but
+the artists agreed to it and the whole package is one clear license.)
+
+The images, sounds, etc that make up the artistic bits of TONG!, like the
+program itself, are my copyright, and available to you via the GNU General
+Public License.  So, if you wish to use any of the art in making your own,
+by all means do so!  The only requirement is that you allow others the same
+freedom.  Don't that just make you feel all warm and fuzzy?

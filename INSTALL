@@ -1,0 +1,28 @@
+TONG! is written to build on any sane system that has the following:
+* SDL       - http://www.libsdl.org/
+* SDL_image - http://www.libsdl.org/projects/SDL_image
+* SDL_mixer - http://www.libsdl.org/projects/SDL_mixer
+Naturally you'll need a compiler too.  GCC is my personal favorite, and is
+available from http://gcc.gnu.org/
+
+
+BUILDING TONG
+-------------
+
+(If you're compiling on Windows (including 64-bit), see INSTALL.win32)
+
+* First, shalt thou run 'make'.
+If you're not picky where the game binary lives, then that's it!  A "tong"
+executable should get built in the base tong-x.x directory.  If not, you
+might need to install SDL, SDL_Image, and SDL_Mixer. (http://libsdl.org)
+(Development libraries, not runtime... but I'm sure you knew that. :^)
+If you've got that stuff installed and it won't build, play with Makefile
+or email me (owenswerk@gmail.com) and ask for help.
+
+You're free to move the directory to /opt/games or some such and make a
+script in /usr/local/bin or something to launch it from anywhere.  If you
+are a GNU/Linux user I'm making the cruel assumption that you know what
+you're doing and won't have any trouble.  One thing to note is that tong
+wants to be run in its own directory; i.e. the media/ folder is in its
+correct relative position.
+
